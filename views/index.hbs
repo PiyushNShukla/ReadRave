@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReadRave|Book Recommending Website</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Varela+Round&display=swap" rel="stylesheet">
+    <script src="public/script.js"></script>
+    </head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+          <a href="/"><img src="images/logo_final.png" alt="ReadRave" ></a>
+        </div>
+       <ul>
+        <li class="items"><a href="#">HOME</a></li>
+        <li class="items"><a href="#">CATEGORIES</a></li>
+        <li class="items"><a href="#">ABOUT US</a></li>
+        <li class="items"><a href="#">CONTACT</a></li>
+       </ul>
+    </nav>
+    <section id="home">
+        <div class="lead-text">Best books every reader should add to their collection</div>
+        <h1 class="h-primary">BOOKS FROM<br>THE BEST WRITERS</h1>
+        <form action="/search"class="w-form">
+        <input type="search" class="form-input" maxlength="256" name="q" placeholder="Search by title, author..." id="search" required>
+        <input type="submit" value="Search" class="button w-button">
+        </form>
+    </section>
+   <div class="grid-categories">
+        <div class="category"id="item1">
+            <a href="/categories/history"><img class="imgcat" src="images/history.jpg" alt="" ></a>
+        </div>
+        <div class="category"id="item2">
+            <a href="/categories/fantasy"><img class="imgcat" src="images/fantasy.jpg" alt="" ></a>
+        </div>
+        <div class="main-category">
+            <a href="/search?q=all the sinners bleed"><img id="thumbnail-image" src="" alt=""></a>
+            <div class="title-author">
+                <h3 class="main-book-category"></h3>
+                <h2 class="main-book-title"></h2>
+            </div>
+        </div>
+        <div class="category"id="item3">
+            <a href="/categories/fiction"><img class="imgcat" src="images/fiction.jpg" alt="" ></a>
+        </div>
+        <div class="category"id="item4">
+            <a href="/categories/biography"><img class="imgcat" src="images/biography.jpg" alt="" ></a>
+        </div>
+        <div class="category"id="item5"> 
+            <a href="/categories/business"><img class="imgcat" src="images/business.jpg" alt="" ></a>
+        </div>
+        <div class="category"id="item6"> 
+            <a href="/categories/mystery"><img class="imgcat" src="images/mystery.jpg" alt="" ></a>
+        </div>
+        <div class="category"id="item7"> 
+            <a href="/categories/romance"><img class="imgcat" src="images/romance.jpg" alt="" ></a>
+        </div>
+        <div class="category"id="item8"> 
+            <a href="/categories/scifi"><img class="imgcat" src="images/scifi.jpg" alt="" ></a>
+        </div>
+        <div class="heading">
+            <h1>Choose from many categories...</h1>
+        </div>
+   </div>
+    <section class="new-arrival">
+        <h1>New Arrivals</h1>
+        <img id="thumbnail-image-new" src="" alt="Most Recent Book Thumbnail">
+            <ul id="book-list"></ul>
+    </section>
+</body>
+</html>

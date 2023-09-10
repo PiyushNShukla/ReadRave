@@ -1,0 +1,232 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+*body{
+    background-color: #160701;
+}
+#navbar{
+    display: flex;
+    position: relative;
+    align-items: center;
+    top: 0px;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: #130101;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.1rem;
+}
+#logo{
+    margin: 15px 10px
+}
+#logo img {
+    height: 50%;
+    width: 50%;
+    margin: 0px 5px;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    margin: 12px 5px;
+    padding: 8px 22px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-family: 'Varela Round', sans-serif;
+    
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    
+}
+#home{
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 85px;
+    height: 400px;*/
+    display: flex;
+    margin-bottom: 70px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background-color: #160701;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -2;
+    
+}
+.lead-text{
+    color: white;
+    font-size: 1.8rem;
+    padding: 15px;
+    margin: 7px;
+    margin-top: 20px;
+}
+.h-primary{
+    font-size: 5rem;
+    padding: 10px 20px;
+}
+#home h1{
+    color: rgba(255, 255, 255, 0.99);
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    color: rgba(253, 249, 251, 0.99);
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Bree Serif', serif;
+    }
+.w-form{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 20px;
+    padding: 10px 20px;
+}
+::placeholder{
+    color: #9d5338;
+    font-size: 16px;
+    font-weight: bold;
+}
+.form-input {
+    height: 47px;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #ffebe4;
+    transition: background-color 300ms ease-in-out;
+    color: #9d5338;
+    font-size: 16px;
+    font-weight: 500;
+    width:350px;
+}
+.button {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 10px;
+    background-color: #9d5338;
+    border: 1px solid black;
+    -webkit-transition: background-color 300ms ease-in-out;
+    transition: background-color 300ms ease-in-out;
+    font-family: Inter, sans-serif;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.grid-categories{
+    background-color:  #160701;;
+}
+.imgcat{
+    width: 170px;
+    height: 250px;
+}
+.grid-categories
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    
+}
+.main-book-title,.main-book-category{
+    color:#fff;
+}
+#thumbnail-image{
+    height:400px;
+    width: 250px;
+}
+.main-category{
+    justify-self: center;
+    grid-column-start: 3;
+    grid-row: 2 / span 3;
+}
+#item1{
+    grid-column-start:1 ;
+    grid-row-start: 1; 
+    justify-self: right;
+}
+#item2{
+    grid-column-start:1 ;
+    grid-row-start: 2; 
+    justify-self: right;
+}
+#item3{
+    grid-column-start:2 ;
+    grid-row-start: 2; 
+    justify-self: right;
+}
+#item4{
+    grid-column-start:2 ;
+    grid-row-start: 3; 
+    justify-self: right;
+}
+#item5{
+    grid-column-start:4 ;
+    grid-row-start: 2; 
+    justify-self: left;
+}
+#item6{
+    grid-column-start:4 ;
+    grid-row-start: 3; 
+    justify-self: left;
+}
+#item7{
+    grid-column-start:5 ;
+    grid-row-start: 1; 
+    justify-self: left;
+}
+#item8{
+    grid-column-start:5;
+    grid-row-start: 2; 
+    justify-self: left;
+}
+.heading{
+    color: #fff;
+    font-family: 'Bree Serif', serif; 
+    font-size: 1 rem;
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    place-self: center;
+        padding-left: 150px;
+    padding-top: 30px;
+}
+h1.heading{
+    font-size: 2 rem;
+}
+.title-author{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin-top: 2px;
+    justify-content: center;
+    align-items: center;
+}
+h3.title-author{
+    text-align: center;
+}
